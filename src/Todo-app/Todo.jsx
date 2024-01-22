@@ -8,7 +8,7 @@ import { MdDeleteForever } from "react-icons/md";
 const Todo = () => {
   const [input, setInput] = useState("");
   const [data, setData] = useState(() => {
-    
+
     const storedData = JSON.parse(localStorage.getItem("todos")) || [];
     return storedData;
   });
@@ -39,7 +39,7 @@ const Todo = () => {
 
   return (
     <>
-      <div className="flex flex-row justify-center w-[100%] h-[100%] bg-slate-800">
+      <div className="flex flex-row justify-center w-[100%] h-[100vh] bg-slate-800">
         <div className="border-[3px] shadow-2xl rounded-lg shadow-[#9360FF] border-[#9360FF] mb-[100px] mt-12 p-[12px] w-[500px] h-[500px]">
           <Heading
             headingName="Todo List"
